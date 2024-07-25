@@ -43,10 +43,10 @@ body {
   color: var(--theme-lightest);
   display: none;
   left: 0;
-  height: 100vh;
-  text-align: center;
+  height: 100dvh;
   padding: 1.5rem 1rem;
   position: absolute;
+  text-align: center;
   top: 0;
   width: 100vw;
 
@@ -65,6 +65,14 @@ body {
     margin: 1.25rem 0;
     text-decoration: none;
     font-size: 2.25rem;
+  }
+
+  & a.cta {
+    align-self: center;
+    background-color: var(--theme-lightest);
+    color: var(--theme-dark);
+    max-width: 18rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -130,7 +138,6 @@ h3 {
 
 p {
   margin: 1.75rem 0;
-  text-align: justify;
 }
 
 ul {
@@ -144,7 +151,7 @@ sup {
 /* Desktop View */
 @media screen and (min-width: 768px) {
   html {
-    scroll-padding-top: 5.25rem;
+    scroll-padding-top: 6.4375rem;
   }
 
   #logo {
@@ -158,6 +165,7 @@ sup {
   }
 
   #menu {
+    align-items: center;
     background-color: unset;
     display: flex;
     height: unset;
@@ -175,7 +183,7 @@ sup {
     }
 
     & a {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin: 0 1rem;
     }
   }
