@@ -150,7 +150,9 @@ h3 {
   & img {
     border: solid 0.0625rem var(--theme-dark);
     border-radius: 100%;
+    height: 100%;
     transform: rotate(55deg);
+    width: 100%;
   }
 }
 
@@ -234,11 +236,5 @@ sup {
     margin: 1.375rem 2.25rem 0 0;
     padding: 1rem;
     width: 24rem;
-
-    & img {
-      border: solid 0.0625rem var(--theme-dark);
-      border-radius: 100%;
-      transform: rotate(55deg);
-    }
   }
 }
