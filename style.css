@@ -29,6 +29,7 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 #logo {
@@ -135,6 +136,24 @@ h3 {
   font-size: 1.75rem;
 }
 
+#about-me {
+  border: solid 0.375rem var(--theme-medium);
+  border-color: var(--theme-medium) transparent var(--theme-medium) transparent;
+  border-radius: 100%;
+  display: flex;
+  height: 15rem;
+  margin: 1.75rem auto -0.25rem;
+  padding: 1rem;
+  transform: rotate(-55deg);
+  width: 15rem;
+
+  & img {
+    border: solid 0.0625rem var(--theme-dark);
+    border-radius: 100%;
+    transform: rotate(55deg);
+  }
+}
+
 p {
   margin: 1.75rem 0;
 }
@@ -207,5 +226,19 @@ sup {
   section {
     align-self: center;
     max-width: 48rem;
+  }
+
+  #about-me {
+    float: left;
+    height: 24rem;
+    margin: 1.375rem 2.25rem 0 0;
+    padding: 1rem;
+    width: 24rem;
+
+    & img {
+      border: solid 0.0625rem var(--theme-dark);
+      border-radius: 100%;
+      transform: rotate(55deg);
+    }
   }
 }
