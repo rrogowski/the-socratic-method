@@ -143,16 +143,41 @@ sup {
 
 /* Desktop View */
 @media screen and (min-width: 768px) {
+  html {
+    scroll-padding-top: 5.25rem;
+  }
+
   #logo {
     font-size: 2rem;
   }
 
   #menubar {
-    padding: 1.5rem 2rem;
+    & > .menu-toggle {
+      display: none;
+    }
   }
 
   #menu {
-    padding: 1.5rem 2rem;
+    background-color: unset;
+    display: flex;
+    height: unset;
+    padding: unset;
+    position: relative;
+    width: unset;
+
+    &.visible {
+      display: inherit;
+      flex-direction: inherit;
+    }
+
+    & > .menu-toggle:not(a) {
+      display: none;
+    }
+
+    & a {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
   }
 
   h1 {
