@@ -71,7 +71,6 @@ body {
     align-self: center;
     background-color: var(--theme-lightest);
     color: var(--theme-dark);
-    max-width: 18rem;
     padding: 1rem 2rem;
   }
 }
@@ -151,7 +150,7 @@ sup {
 /* Desktop View */
 @media screen and (min-width: 768px) {
   html {
-    scroll-padding-top: 6.4375rem;
+    scroll-padding-top: 6.25rem;
   }
 
   #logo {
@@ -183,8 +182,13 @@ sup {
     }
 
     & a {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       margin: 0 1rem;
+    }
+
+    & a.cta {
+      margin-right: 0;
+      padding: 1rem 1.5rem;
     }
   }
 
