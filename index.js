@@ -15,17 +15,13 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.querySelectorAll("#menu a").forEach((element) => {
-    element.addEventListener("click", () => {
-      requestAnimationFrame(() => {
-        const menubarHeight = document
-          .querySelector("#menubar")
-          .getBoundingClientRect().height;
-        window.scrollTo({ top: window.scrollY - menubarHeight });
-        document.querySelector("#menu").classList.toggle("visible");
+  if ("ontouchstart" in document.documentElement) {
+    document.querySelectorAll("#menu a").forEach((element) => {
+      element.addEventListener("touchstart", () => {
+        window.location = element.href;
       });
     });
-  });
+  }
 
   window.addEventListener("scroll", () => {
     lastKnownScrollPosition = window.scrollY;
