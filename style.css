@@ -1,7 +1,7 @@
 :root {
   --theme-lightest: #eeeeee;
-  --theme-medium: rgb(76, 114, 115);
-  --theme-dark: rgb(4, 38, 48);
+  --theme-medium: #4c7273;
+  --theme-dark: #042630;
   --theme-darkest: #041421;
 }
 
